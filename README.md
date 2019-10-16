@@ -70,7 +70,7 @@ yourProjectName = "101_django_template"
 # some private content i.e. logon info, sshd info, is not part of the 100_django_template
 # therefore I copy these files from a local location
 # if you dont have these files, you have to set both values to None
-# NOTE: you have to manually change this file
+# NOTE: you have to manually change this file after install is complete (run Notebook first)
 my_stuff_path = r"C:\python_venvs\99_snipp_block\dj_conf_files\my_stuff.py" # set to None if no file
 # set to None if not relevant
 sshd_config_path = r"C:\python_venvs\99_snipp_block\dj_conf_files\sshd_config" # set to None if no file
