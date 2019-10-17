@@ -42,7 +42,7 @@ yourProjectName = input("input your project name: ")
 ```python
 # enter project location
 # this is the name of your Project Folder where the all your projects and venvs live
-venvsPath = "/".join(os.getcwd().split("\\")[:-1])
+venvsPath = os.getcwd()
 inputVenvsPath = input(f"enter project location, press [Enter] if location is {venvsPath}/{yourProjectName}: ")
 venvsPath = inputVenvsPath if inputVenvsPath else venvsPath
 go = input(f"repo: {cloneProjectName} will be renamed and venv installed in: {venvsPath}/{yourProjectName}, [Y/N]: ")
