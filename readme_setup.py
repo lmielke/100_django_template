@@ -34,7 +34,7 @@ def main(*args):
     except:
         raise Exception("copying my_stuff.py failed because path does not exist! You have to manually adjust my_stuff.py. Its location is same as settings.py")
 
-    exec(open(newEnvActPy).read(), dict(__file__ = newEnvActPy))
+    exec(open(newEnvActPy).read(), {'__file__': newEnvActPy})
     # all relevant programs are installed and/or updated
     # feel free to add or remove programs
     subprocess.call(["python", "-m", "pip", "install", "--upgrade", "pip"], shell=True)
