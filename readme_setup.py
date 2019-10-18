@@ -3,7 +3,7 @@
 
 # # 100_django_template
 
-# In[9]:
+# In[1]:
 
 
 # imports needed to run installation routine
@@ -192,12 +192,9 @@ if __name__ == '__main__':
     p2 = multiprocessing.Process(target=test_server)
     p1.start()
     p2.start()
-
-
-# In[ ]:
-
-
-print("INSTALL COMPLETE")
+    p1.join()
+    p2.join()
+    raise Exception("INSTALL COMPLETE")
 
 
 # # The installation is now complete.
