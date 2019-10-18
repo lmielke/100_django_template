@@ -3,7 +3,7 @@
 
 # # 100_django_template
 
-# In[1]:
+# In[ ]:
 
 
 # imports needed to run installation routine
@@ -151,7 +151,15 @@ subprocess.call(['python', 'manage.py', 'makemigrations'], shell=True)
 subprocess.call(['python', 'manage.py', 'migrate'], shell=True)
 
 
-# In[3]:
+# # The installation is now complete.
+# 
+# Dont forget to:
+# 1. change the my_stuff.py file (its in the same dir as settings.py)
+# 2. Activate your environment: To activate it, type {{yourVenvPath}}\Scripts/activate.bat (on windows)
+# 3. Create your admin user: To create it, go to the web_project folder and and run: manage.py createsuperuser
+# 4. Test your installation!!! To test it, go to the web_project folder and and run: python manage.py runserver
+
+# In[ ]:
 
 
 def run_server():
@@ -182,7 +190,7 @@ def test_server():
     return True
 
 
-# In[1]:
+# In[ ]:
 
 
 if __name__ == '__main__':
@@ -194,16 +202,14 @@ if __name__ == '__main__':
     p2.start()
     p1.join()
     p2.join()
-    raise Exception("INSTALL COMPLETE")
+    sleep(10)
 
 
-# # The installation is now complete.
-# 
-# Dont forget to:
-# 1. change the my_stuff.py file (its in the same dir as settings.py)
-# 2. Activate your environment: To activate it, type {{yourVenvPath}}\Scripts/activate.bat (on windows)
-# 3. Create your admin user: To create it, go to the web_project folder and and run: manage.py createsuperuser
-# 4. Test your installation!!! To test it, go to the web_project folder and and run: python manage.py runserver
+# In[ ]:
+
+
+raise Exception("INSTALL COMPLETE")
+
 
 # # 3. Manual Setup
 # ## 3.1. Clone the repo and run above steps manually :)
