@@ -3,11 +3,12 @@
 
 # # 100_django_template
 
-# In[ ]:
+# In[1]:
 
 
-# imports needed to run installation routine
-import multiprocessing, os, shutil, subprocess, time
+def imports():
+    # imports needed to run installation routine
+    import multiprocessing, os, shutil, subprocess, time
 
 
 # # 1. What am I
@@ -33,35 +34,38 @@ import multiprocessing, os, shutil, subprocess, time
 # 4. Enter ProjectName (you can change the repo name here)
 # 5. Remove setup file --> (del/rm readme_setup.py)
 
+# In[2]:
+
+
+def names():
+    # enter project name
+    # name of the project folder, that contains django project and django venv
+    cloneProjectName = "100_django_template"
+    yourProjectName = input("input your project name: ")
+
+
 # In[3]:
 
 
-# enter project name
-# name of the project folder, that contains django project and django venv
-cloneProjectName = "100_django_template"
-yourProjectName = input("input your project name: ")
+def paths():
+    # this is the name of your Project Folder where the all your projects and venvs live
+    venvsPath = os.getcwd()
+    go = input(f"venv: {cloneProjectName} will be installed in: {venvsPath}/{yourProjectName}, [Y/N]: ")
+    if go == "Y":
+        print("\nstarting installation")
+    else:
+        raise Exception("instalation aborted, to retry import readme_setup again")
 
 
 # In[4]:
 
 
-# this is the name of your Project Folder where the all your projects and venvs live
-venvsPath = os.getcwd()
-go = input(f"venv: {cloneProjectName} will be installed in: {venvsPath}/{yourProjectName}, [Y/N]: ")
-if go == "Y":
-    print("\nstarting installation")
-else:
-    raise Exception("instalation aborted, to retry import readme_setup again")
+def stuff():
+    # some secrets are imported into settings.py from my_stuff.py
+    # a default my_stuff.py already exists inside the same folder as settings.py
 
-
-# In[5]:
-
-
-# some secrets are imported into settings.py from my_stuff.py
-# a default my_stuff.py already exists inside the same folder as settings.py
-
-# to continue with the default my_stuff.py file just assign a None value below and continue
-myStuffPath = os.path.join(venvsPath, "99_snipp_block", "dj_conf_files", "my_stuff.py")
+    # to continue with the default my_stuff.py file just assign a None value below and continue
+    myStuffPath = os.path.join(venvsPath, "99_snipp_block", "dj_conf_files", "my_stuff.py")
 
 
 # ## 2.1. Install Preparation
@@ -69,86 +73,110 @@ myStuffPath = os.path.join(venvsPath, "99_snipp_block", "dj_conf_files", "my_stu
 
 # ### 2.1.2 Notebook does some prep work such as checking if venv exists and create some relevant paths
 
-# In[6]:
+# In[5]:
 
 
-# checks if venv already exists
-# no need to modify
-existingEnvironments = os.listdir(venvsPath)
-if yourProjectName in existingEnvironments:
-    raise Exception(f"UUUUPPPPSSS: AN Environement with name {yourProjectName} already exists in {venvsPath} \n{existingEnvironments}")
-else:
-    print("ready to go")
+def check():
+    # checks if venv already exists
+    # no need to modify
+    existingEnvironments = os.listdir(venvsPath)
+    if yourProjectName in existingEnvironments:
+        raise Exception(f"UUUUPPPPSSS: AN Environement with name {yourProjectName} already exists in {venvsPath} \n{existingEnvironments}")
+    else:
+        print("ready to go")
 
 
 # ### 2.1.3. venv directory will be renamed to what you specified above
 
-# In[14]:
+# In[6]:
 
 
-os.chdir(venvsPath)
-os.rename(cloneProjectName, yourProjectName)
+def rename():
+    os.chdir(venvsPath)
+    os.rename(cloneProjectName, yourProjectName)
 
 
 # # 2.2. Install Environment
 
-# In[15]:
+# In[7]:
 
 
-# this creates a empty environment inside yourVenvPath
-yourProjectPath = os.path.join(venvsPath, yourProjectName)
-subprocess.call(["python", "-m", "venv", os.path.join(yourProjectPath, "venv")], shell=True)
+def create():
+    # this creates a empty environment inside yourVenvPath
+    yourProjectPath = os.path.join(venvsPath, yourProjectName)
+    subprocess.call(["python", "-m", "venv", os.path.join(yourProjectPath, "venv")], shell=True)
 
 
-# In[29]:
+# In[8]:
 
 
-# this copies files to allow subprocess to activate your environment
-newEnvActPy = os.path.join(yourProjectPath, "venv", "Scripts", "activate_this.py")
-shutil.copyfile(os.path.join(yourProjectPath, "resources", "activate_this.py"), newEnvActPy)
+def copy():
+    # this copies files to allow subprocess to activate your environment
+    newEnvActPy = os.path.join(yourProjectPath, "venv", "Scripts", "activate_this.py")
+    shutil.copyfile(os.path.join(yourProjectPath, "resources", "activate_this.py"), newEnvActPy)
 
 
-# In[26]:
+# In[9]:
 
 
-# this copies my private my_stuff.py file from your local location into the venv
-# if you have assigned None to the myStuffPath this step will do nothing
-# you have to manually adjust your my_stuff.py file however. Its location is same as settings.py
-try:
-    print(myStuffPath)
-    shutil.copyfile(myStuffPath, os.path.join(yourProjectPath, "web_project", "web_project", "my_stuff.py"))
-except:
-    raise Exception("copying my_stuff.py failed because path does not exist! You have to manually adjust my_stuff.py. Its location is same as settings.py")
+def cpstuff():
+    # this copies my private my_stuff.py file from your local location into the venv
+    # if you have assigned None to the myStuffPath this step will do nothing
+    # you have to manually adjust your my_stuff.py file however. Its location is same as settings.py
+    try:
+        print(myStuffPath)
+        shutil.copyfile(myStuffPath, os.path.join(yourProjectPath, "web_project", "web_project", "my_stuff.py"))
+    except:
+        raise Exception("copying my_stuff.py failed because path does not exist! You have to manually adjust my_stuff.py. Its location is same as settings.py")
 
 
 # ### 2.2.1. Installs all content of new environment, i.e. requirements.txt ect.
 
-# In[30]:
+# In[10]:
 
 
-exec(open(newEnvActPy).read(), dict(__file__ = newEnvActPy))
-# all relevant programs are installed and/or updated
-# feel free to add or remove programs
-subprocess.call(["python", "-m", "pip", "install", "--upgrade", "pip"], shell=True)
-subprocess.call(["pip", "install", "--upgrade", "setuptools"], shell=True)
+def installs():
+    exec(open(newEnvActPy).read(), dict(__file__ = newEnvActPy))
+    # all relevant programs are installed and/or updated
+    # feel free to add or remove programs
+    subprocess.call(["python", "-m", "pip", "install", "--upgrade", "pip"], shell=True)
+    subprocess.call(["pip", "install", "--upgrade", "setuptools"], shell=True)
 
-# i use pyperclip inside some service scripts, its not needed for this repo to run, you can remove it
-subprocess.call(["pip", "install", "pyperclip"], shell=True)
+    # i use pyperclip inside some service scripts, its not needed for this repo to run, you can remove it
+    subprocess.call(["pip", "install", "pyperclip"], shell=True)
 
-# this installs the requirements.txt
-subprocess.call(["pip", "install", "-r", os.path.join(yourProjectPath, "resources", "requirements.txt")], shell=True)
+    # this installs the requirements.txt
+    subprocess.call(["pip", "install", "-r", os.path.join(yourProjectPath, "resources", "requirements.txt")], shell=True)
 
 
 # ### 2.2.2. Try migrations
 
-# In[32]:
+# In[11]:
 
 
-# this makes migrations although there should be none
-os.chdir(os.path.join(yourProjectPath, "web_project"))
-print(f"your manage.py is under {os.getcwd()}")
-subprocess.call(['python', 'manage.py', 'makemigrations'], shell=True)
-subprocess.call(['python', 'manage.py', 'migrate'], shell=True)
+def migrations():
+    # this makes migrations although there should be none
+    os.chdir(os.path.join(yourProjectPath, "web_project"))
+    print(f"your manage.py is under {os.getcwd()}")
+    subprocess.call(['python', 'manage.py', 'makemigrations'], shell=True)
+    subprocess.call(['python', 'manage.py', 'migrate'], shell=True)
+
+
+# In[15]:
+
+
+def main():
+    imports()
+    names()
+    paths()
+    stuff()
+    check()
+    renmame()
+    create()
+    copy()
+    cpstuff()
+    installs()
+    migrations()
 
 
 # # The installation is now complete.
@@ -159,7 +187,7 @@ subprocess.call(['python', 'manage.py', 'migrate'], shell=True)
 # 3. Create your admin user: To create it, go to the web_project folder and and run: manage.py createsuperuser
 # 4. Test your installation!!! To test it, go to the web_project folder and and run: python manage.py runserver
 
-# In[ ]:
+# In[13]:
 
 
 def run_server():
@@ -170,14 +198,13 @@ def run_server():
     return CHPID
 
 
-# In[ ]:
+# In[14]:
 
 
 def test_server():
     import requests, time
     from datetime import datetime as dt
     from datetime import timedelta as td
-    time.sleep(5)
     # timeCheck = requests.get("http://localhost:8000").text.find(f"{dt.now() - td(hours=2):%H:%M}")
     # success = True if timeCheck != -1 else False
     match = re.compile(r"(<CHPID>)(\d{3,6})(</CHPID>)")
@@ -196,19 +223,18 @@ def test_server():
 if __name__ == '__main__':
     print(__name__)
     prcId = None
-    p1 = multiprocessing.Process(target=run_server)
-    p2 = multiprocessing.Process(target=test_server)
-    p1.start()
-    p2.start()
-    p1.join()
-    p2.join()
-    sleep(10)
-
-
-# In[ ]:
-
-
-raise Exception("INSTALL COMPLETE")
+    main = multiprocessing.Process(target=main)
+    run = multiprocessing.Process(target=run_server)
+    test = multiprocessing.Process(target=test_server)
+    main.start()
+    main.join()
+    print("install is done")
+    run.start()
+    run.join()
+    print("server run done")
+    test.start()
+    test.join()
+    print("INSTALL COMPLETE")
 
 
 # # 3. Manual Setup
