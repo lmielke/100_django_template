@@ -2,6 +2,7 @@ import multiprocessing, os, re, shutil, subprocess, sys, time
 import argparse
 parser = argparse.ArgumentParser(description="wtf")
 parser.add_argument('yourProjectName', help='folder Name your project will exsist as')
+parser.add_argument('yourHost', help='prod: IP, dev: http://localhost:8000')
 
 venvsPath = os.getcwd()
 cloneProjectName = "100_django_template"
@@ -68,7 +69,7 @@ def test_server():
     # timeCheck = requests.get("http://localhost:8000").text.find(f"{dt.now() - td(hours=2):%H:%M}")
     # success = True if timeCheck != -1 else False
     match = re.compile(r"(<CHPID>)(\d{3,6})(</CHPID>)")
-    prcId = re.search(match, requests.get("http://localhost:8000").text)[2]
+    prcId = re.search(match, requests.get(parser.parse_args().yourHost).text)[2]
     subprocess.call(['TASKKILL', '/PID', str(prcId), '/F'], shell=True)
     if prcId:
         print(f"\n\n\tSUCCSESS: Server ran successfully with prcId: {prcId}\n\n")
