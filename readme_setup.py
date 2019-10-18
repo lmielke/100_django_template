@@ -3,12 +3,11 @@
 
 # # 100_django_template
 
-# In[2]:
+# In[9]:
 
 
-from IPython.display import Image
 # imports needed to run installation routine
-import os, shutil, subprocess
+import multiprocessing, os, shutil, subprocess, time
 
 
 # # 1. What am I
@@ -23,13 +22,16 @@ import os, shutil, subprocess
 
 # # 2. Setup and installation using this notebook
 
-# This will clone the repository to your local drive, create a environment and install the requirements.txt, create a new git repro and commit all files
-# 1. clone repo into your venvs location, using: git clone https://github.com/lmielke/100_django_template.git
-# 2. copy the readme_setup.py file to a location outside the new project folder
-# 3. cd into the readme_setup.py location and type: python
-# 4. in your python cmd type: import readme_setup
-# 5. enter ProjectName and ProjectPath when prompted
-# 6. remove readme_setup.py file
+# This will clone the repository to your local drive, create a environment and install the requirements.txt, create a new git repro and commit all files.
+# 
+# If on Windows, just use the commands as provided
+# 1. Clone repo into folder in which this repo will exist          --> (cd [venvs folder] && git clone https://github.com/lmielke/100_django_template.git)
+# 2. Copy the readme_setup.py file into your venvs folder        --> (cd 100_django_template && copy readme_setup.py .. && cd ..)
+# 3. Run readme_setup.py --> (readme_setup.py)
+# 
+#     NOTE: The readme_setup.py is a nbconvert of this notebook. If necessary  it can be created by typing (jupyter nbconvert --to script readme_setup.ipynb) inside the repo folder.
+# 4. Enter ProjectName (you can change the repo name here)
+# 5. Remove setup file --> (del/rm readme_setup.py)
 
 # In[3]:
 
@@ -43,12 +45,9 @@ yourProjectName = input("input your project name: ")
 # In[4]:
 
 
-# enter project location
 # this is the name of your Project Folder where the all your projects and venvs live
-venvsPath = "/".join(os.getcwd().split("\\")[:-1])
-inputVenvsPath = input(f"enter project location, press [Enter] if location is {venvsPath}/{yourProjectName}: ")
-venvsPath = inputVenvsPath if inputVenvsPath else venvsPath
-go = input(f"repo: {cloneProjectName} will be renamed and venv installed in: {venvsPath}/{yourProjectName}, [Y/N]: ")
+venvsPath = os.getcwd()
+go = input(f"venv: {cloneProjectName} will be installed in: {venvsPath}/{yourProjectName}, [Y/N]: ")
 if go == "Y":
     print("\nstarting installation")
 else:
@@ -152,10 +151,53 @@ subprocess.call(['python', 'manage.py', 'makemigrations'], shell=True)
 subprocess.call(['python', 'manage.py', 'migrate'], shell=True)
 
 
-# In[33]:
+# In[3]:
 
 
-os.chdir(venvsPath)
+def run_server():
+    CHPID = os.getpid()
+    print(CHPID)
+    exec(open(r"C:\python_venvs\101_django_template\venv\Scripts\activate_this.py").read(), dict(__file__ = r"C:\python_venvs\101_django_template\venv\Scripts\activate_this.py"))
+    subprocess.call(['python', 'manage.py', 'runserver'], shell=True)
+    return CHPID
+
+
+# In[ ]:
+
+
+def test_server():
+    import requests, time
+    from datetime import datetime as dt
+    from datetime import timedelta as td
+    time.sleep(5)
+    # timeCheck = requests.get("http://localhost:8000").text.find(f"{dt.now() - td(hours=2):%H:%M}")
+    # success = True if timeCheck != -1 else False
+    match = re.compile(r"(<CHPID>)(\d{3,6})(</CHPID>)")
+    prcId = re.search(match, requests.get("http://localhost:8000").text)[2]
+    subprocess.call(['TASKKILL', '/PID', str(prcId), '/F'], shell=True)
+    if prcId:
+        print(f"\n\n\tSUCCSESS: Server ran successfully with prcId: {prcId}\n\n")
+    else:
+        print(f"\n\n\tWARNING: Server run could not be confirmed\n\n")
+    return True
+
+
+# In[1]:
+
+
+if __name__ == '__main__':
+    print(__name__)
+    prcId = None
+    p1 = multiprocessing.Process(target=run_server)
+    p2 = multiprocessing.Process(target=test_server)
+    p1.start()
+    p2.start()
+
+
+# In[ ]:
+
+
+print("INSTALL COMPLETE")
 
 
 # # The installation is now complete.
@@ -167,7 +209,7 @@ os.chdir(venvsPath)
 # 4. Test your installation!!! To test it, go to the web_project folder and and run: python manage.py runserver
 
 # # 3. Manual Setup
-# ## 3.1. Run above steps manually :)
+# ## 3.1. Clone the repo and run above steps manually :)
 
 # In[ ]:
 
