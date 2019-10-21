@@ -112,7 +112,7 @@ if __name__ == '__main__':
         print(f"in else with: {os.getpid()}")
         if  not parser.parse_args().pid:
             print("calling subprocess")
-            subprocess.call(['readme_setup.py', '100_django_template', 'http://localhost:8000', '-pid', str(os.getpid())], shell=True)
+            subprocess.call(['readme_setup.py', yourProjectName, 'http://localhost:8000', '-pid', str(os.getpid())], shell=True)
         else:
             print(f"in subprocess with: {parser.parse_args().pid}")
 
