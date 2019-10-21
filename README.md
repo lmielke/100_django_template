@@ -14,7 +14,7 @@ This is a simple django template with some pre implemented features such as:
 To manually install in development, clone this repo and install the requirements.txt from the resources folder. Add my_stuff.py to the folder which contains settings.py
 HINT: content of my_stuff.py can be seen blow under NOTES for 01_clone_repo. Lines 39-60
 
-# 2. Development Setup and installation using the code below (Windows only)
+# 2. Development Setup and installation using the commands below (Windows only)
 
 I use this installer because it meets my personal preferences. Use at own risk! Do not run this notebook directly but use readme_setup.py file instead. This will create a environment and install the requirements.txt.
 
@@ -31,35 +31,37 @@ NOTE: to install in Prod you have to make some changes to /resources/ubuntu_apac
 
 
 Resources: I use keepass to keep the install info in two seperate keepass entries
+01_clone_repo
 #################################################################################
-Autotype Sequence: sudo apt update && sudo apt install git && cd /home{ENTER}{DELAY 30000}{URL}{ENTER}{DELAY 10000}sudo chown -R {USERNAME}:{USERNAME} /home{ENTER}{DELAY 1000}sudo chmod -R 777 /home{ENTER}nano {PASSWORD}{ENTER}{DELAY 1000}{NOTES}
+    Autotype Sequence: sudo apt update && sudo apt install git && cd /home{ENTER}{DELAY 30000}{URL}{ENTER}{DELAY 10000}sudo chown -R {USERNAME}:{USERNAME} /home{ENTER}{DELAY 1000}sudo chmod -R 777 /home{ENTER}nano {PASSWORD}{ENTER}{DELAY 1000}{NOTES}
 
-TITLE: 01_clone_repo
-USERNAME: myuser
-PASSWORD: /home/my_stuff.py
-URL: sudo git clone https://github.com/lmielke/100_django_template.git
-NOTES:
-import socket
+    TITLE: 01_clone_repo
+    USERNAME: myuser
+    PASSWORD: /home/my_stuff.py
+    URL: sudo git clone https://github.com/lmielke/100_django_template.git
 
-# str here needs to be part of virtualenv in gcloud 
-PRODUCTION = 'prod' in socket.gethostname()
-print(f'HOSTNAME = {socket.gethostname()}')
+    NOTES:
+        import socket
 
-# is added to allowed hosts
-PRODUCTION_IP = '35.123.456.78'
+        # str here needs to be part of virtualenv in gcloud 
+        PRODUCTION = 'prod' in socket.gethostname()
+        print(f'HOSTNAME = {socket.gethostname()}')
 
-# only needed if reverse proxy is used
-PROXY_IPS = ['in-case-of.proxy']
+        # is added to allowed hosts
+        PRODUCTION_IP = '35.123.456.78'
 
-# gmail account for signup and pwd reset
-EMAIL_HOST = 'smtp.yourmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'yourMail@somewhere.com'
-EMAIL_HOST_PASSWORD = 'some§$"§%pass§$"word'
+        # only needed if reverse proxy is used
+        PROXY_IPS = ['in-case-of.proxy']
 
-# to debug in production set to True
-DEBUG_PROD = False
+        # gmail account for signup and pwd reset
+        EMAIL_HOST = 'smtp.yourmail.com'
+        EMAIL_PORT = 587
+        EMAIL_USE_TLS = True
+        EMAIL_HOST_USER = 'yourMail@somewhere.com'
+        EMAIL_HOST_PASSWORD = 'some§$"§%pass§$"word'
+
+        # to debug in production set to True
+        DEBUG_PROD = False
 
 Autotype generates the lines below: dont forget to change the params, to convirm you hit Ctrl+x, Y, ENTER
 
@@ -91,14 +93,15 @@ Autotype generates the lines below: dont forget to change the params, to convirm
     DEBUG_PROD = False
 
 
+02_install_project
 #################################################################################
-Autotype Sequence: cp /home/my_stuff.py {USERNAME}{ENTER}{DELAY 1000}cp {URL}/resources/{NOTES} /home/{NOTES}{ENTER}{DELAY 1000}chmod 777 /home/{NOTES}{ENTER}{DELAY 1000}./{NOTES}
+    Autotype Sequence: cp /home/my_stuff.py {USERNAME}{ENTER}{DELAY 1000}cp {URL}/resources/{NOTES} /home/{NOTES}{ENTER}{DELAY 1000}chmod 777 /home/{NOTES}{ENTER}{DELAY 1000}./{NOTES}
 
-TITLE: 02_install_project
-USERNAME: /home/100_django_template/web_project/web_project/my_stuff.py
-PASSWORD: empty
-URL: /home/100_django_template
-NOTES: ubuntu_apache.sh
+    TITLE: 02_install_project
+    USERNAME: /home/100_django_template/web_project/web_project/my_stuff.py
+    PASSWORD: empty
+    URL: /home/100_django_template
+    NOTES: ubuntu_apache.sh
 
 Autotype generates the lines below: to confirm, hit ENTER
 
