@@ -24,7 +24,7 @@ def main(*args):
         print("ready to go")
     os.chdir(venvsPath)
     os.rename(cloneProjectName, yourProjectName)
-    subprocess.call(["python3.7", "-m", "venv", os.path.join(yourProjectPath, "venv")], shell=True)
+    subprocess.call(["python3", "-m", "venv", os.path.join(yourProjectPath, "venv")], shell=True)
     # this copies files to allow subprocess to activate your environment
     shutil.copyfile(os.path.join(yourProjectPath, "resources", "activate_this.py"), newEnvActPy)
 
