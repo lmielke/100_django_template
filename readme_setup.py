@@ -139,7 +139,7 @@ def test_server():
 
 
 if __name__ == '__main__':
-    if "django_template" in venvsPath or not sys.path[0].endswith("readme_setup.py"):
+    if "django_template" in venvsPath:
         raise Exception("HANDLING ERROR: you can not run readme_setup.py from inside the django_template folder")
     prcId = None
     a = multiprocessing.Process(target=main, args=(cloneProjectName, yourProjectName, venvsPath, yourProjectPath, djProjectPath, newEnvActPy))
