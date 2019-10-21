@@ -1,2 +1,2 @@
-import genericpath
-print(genericpath.__file__)
+import sys
+print(sys.path[0])

@@ -35,7 +35,6 @@ sudo /etc/wsgi-port-80/apachectl start
 sudo cp /home/100_django_template/conf_files/sshd_config /etc/ssh/sshd_config
 sudo systemctl restart sshd
 sudo apt install ufw -y
-y
 sudo ufw default allow outgoing
 sudo ufw default deny incoming
 sudo ufw allow ssh
@@ -43,7 +42,6 @@ sudo ufw allow http/tcp
 sudo ufw allow https/tcp
 sudo ufw allow 3389
 sudo ufw enable
-y
 sudo passwd marvin
 Nihau_Ma1
 Nihau_Ma1
@@ -52,14 +50,10 @@ sudo ufw status
 sudo /etc/wsgi-port-80/apachectl restart
 sudo apt install xrdp
 sudo apt remove lightdm
-Y
 sudo apt install xfce4
-Y
 sudo apt-get install xfce4-terminal tango-icon-theme
-Y
 echo xfce4-session > ~/.xsession
 sudo apt install libexo-1-0
 sudo apt install firefox
-Y
 sudo service xrdp restart
 sudo /etc/wsgi-port-80/apachectl restart
