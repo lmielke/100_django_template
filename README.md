@@ -33,7 +33,8 @@ NOTE: to install in Prod you have to make some changes to /resources/ubuntu_apac
 Resources: I use keepass to keep the install info in two seperate keepass entries
 01_clone_repo
 #################################################################################
-    Autotype Sequence: sudo apt update && sudo apt install git && cd /home{ENTER}{DELAY 30000}{URL}{ENTER}{DELAY 10000}sudo chown -R {USERNAME}:{USERNAME} /home{ENTER}{DELAY 1000}sudo chmod -R 777 /home{ENTER}nano {PASSWORD}{ENTER}{DELAY 1000}{NOTES}
+    
+Autotype Sequence: sudo apt update && sudo apt install git && cd /home{ENTER}{DELAY 30000}{URL}{ENTER}{DELAY 10000}sudo chown -R {USERNAME}:{USERNAME} /home{ENTER}{DELAY 1000}sudo chmod -R 777 /home{ENTER}nano {PASSWORD}{ENTER}{DELAY 1000}{NOTES}
 
     TITLE: 01_clone_repo
     USERNAME: myuser
@@ -47,9 +48,6 @@ Resources: I use keepass to keep the install info in two seperate keepass entrie
         PRODUCTION = 'prod' in socket.gethostname()
         print(f'HOSTNAME = {socket.gethostname()}')
 
-        # is added to allowed hosts
-        PRODUCTION_IP = '35.123.456.78'
-
         # only needed if reverse proxy is used
         PROXY_IPS = ['in-case-of.proxy']
 
@@ -62,6 +60,9 @@ Resources: I use keepass to keep the install info in two seperate keepass entrie
 
         # to debug in production set to True
         DEBUG_PROD = False
+
+        # is added to allowed hosts
+        PRODUCTION_IP = '35.123.<--'
 
 Autotype generates the lines below: dont forget to change the params, to convirm you hit Ctrl+x, Y, ENTER
 
@@ -95,7 +96,8 @@ Autotype generates the lines below: dont forget to change the params, to convirm
 
 02_install_project
 #################################################################################
-    Autotype Sequence: cp /home/my_stuff.py {USERNAME}{ENTER}{DELAY 1000}cp {URL}/resources/{NOTES} /home/{NOTES}{ENTER}{DELAY 1000}chmod 777 /home/{NOTES}{ENTER}{DELAY 1000}./{NOTES}
+
+Autotype Sequence: cp /home/my_stuff.py {USERNAME}{ENTER}{DELAY 1000}cp {URL}/resources/{NOTES} /home/{NOTES}{ENTER}{DELAY 1000}chmod 777 /home/{NOTES}{ENTER}{DELAY 1000}./{NOTES}
 
     TITLE: 02_install_project
     USERNAME: /home/100_django_template/web_project/web_project/my_stuff.py
