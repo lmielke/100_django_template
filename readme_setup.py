@@ -1,14 +1,14 @@
 import multiprocessing, os, re, shutil, subprocess, sys, time
 import argparse
+
 parser = argparse.ArgumentParser(description="wtf")
 parser.add_argument('yourProjectName', help='folder Name your project will exsist as')
 parser.add_argument('yourHost', help='prod: IP, dev: http://localhost:8000')
 
 venvsPath = os.getcwd()
 cloneProjectName = "100_django_template"
-print(f"your new project will be in: {venvsPath}/yourProjectName")
 yourProjectName = parser.parse_args().yourProjectName
-print(yourProjectName)
+print(f"your new project will be in: {venvsPath}/{yourProjectName}")
 yourProjectPath = os.path.join(venvsPath, yourProjectName)
 djProjectPath = os.path.join(yourProjectPath, "web_project")
 newEnvActPy = os.path.join(yourProjectPath, "venv", "Scripts", "activate_this.py")
