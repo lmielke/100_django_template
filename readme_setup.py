@@ -4,6 +4,7 @@ import argparse
 parser = argparse.ArgumentParser(description="wtf")
 parser.add_argument('yourProjectName', help='folder Name your project will exsist as')
 parser.add_argument('yourHost', help='prod: IP, dev: http://localhost:8000')
+parser.add_argument('-pid', type=int, required=False, help='internally used pid to cancel init process')
 
 venvsPath = os.getcwd()
 cloneProjectName = "100_django_template"
@@ -82,17 +83,38 @@ def test_server():
 
 
 if __name__ == '__main__':
-    prcId = None
-    a = multiprocessing.Process(target=main, args=(cloneProjectName, yourProjectName, venvsPath, yourProjectPath, djProjectPath, newEnvActPy))
-    b = multiprocessing.Process(target=run_server, args=(cloneProjectName, yourProjectName, venvsPath, yourProjectPath, djProjectPath, newEnvActPy))
-    c = multiprocessing.Process(target=test_server)
-    a.start()
-    a.join()
-    print("install is done")
-    b.start()
-    c.start()
-    c.join()
-    print("INSTALL COMPLETE")
+    setupPath = os.path.join(venvsPath, "readme_setup.py")
+    os.chdir("/".join(venvsPath.split('\\')[:-1]))
+    installPath = os.path.join(os.getcwd(), "readme_setup.py")
+    if os.path.isfile(installPath):
+        if parser.parse_args().pid:
+            print(f"in if with: {os.getpid()} and {(parser.parse_args().pid)}")
+            subprocess.call(["TASKKILL", "/PID", str(parser.parse_args().pid), "/F"], shell=True)
+            time.sleep(1)
+            print(f"killed {parser.parse_args().pid} but continuing")
+            prcId = None
+            a = multiprocessing.Process(target=main, args=(cloneProjectName, yourProjectName, venvsPath, yourProjectPath, djProjectPath, newEnvActPy))
+            b = multiprocessing.Process(target=run_server, args=(cloneProjectName, yourProjectName, venvsPath, yourProjectPath, djProjectPath, newEnvActPy))
+            c = multiprocessing.Process(target=test_server)
+            a.start()
+            a.join()
+            print("install is done")
+            b.start()
+            c.start()
+            c.join()
+            print(f"now deleting readme_setup.py from {os.getcwd()}")
+            subprocess.call(["del", "readme_setup.py"], shell=True)
+            print("INSTALL COMPLETE")
+        else:
+            print("file already exists, delete readme_setup.py first and retry")
+    else:
+        shutil.copyfile(setupPath, installPath)
+        print(f"in else with: {os.getpid()}")
+        if  not parser.parse_args().pid:
+            print("calling subprocess")
+            subprocess.call(['readme_setup.py', '100_django_template', 'http://localhost:8000', '-pid', str(os.getpid())], shell=True)
+        else:
+            print(f"in subprocess with: {parser.parse_args().pid}")
 
 
 """
