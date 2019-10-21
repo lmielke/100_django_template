@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home
-mv -r 100_django_template 100_django_project
+mv 100_django_template 100_django_project
 sudo apt -y update
 sudo apt -y upgrade
 sudo apt install -y python3-pip
