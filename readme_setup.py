@@ -32,9 +32,8 @@
 # In[25]:
 
 
-import genericpath, multiprocessing, os, re, shutil, subprocess, sys, time
+import multiprocessing, os, re, shutil, subprocess, sys, time
 import argparse
-print(genericpath.__file__)
 
 
 # In[26]:
@@ -140,7 +139,7 @@ def test_server():
 
 
 if __name__ == '__main__':
-    if "django_template" in venvsPath or not genericpath.__file__.endswith("readme_setup.py"):
+    if "django_template" in venvsPath or not sys.path[0].endswith("readme_setup.py"):
         raise Exception("HANDLING ERROR: you can not run readme_setup.py from inside the django_template folder")
     prcId = None
     a = multiprocessing.Process(target=main, args=(cloneProjectName, yourProjectName, venvsPath, yourProjectPath, djProjectPath, newEnvActPy))
