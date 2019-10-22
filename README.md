@@ -32,9 +32,9 @@ NOTE: The readme_setup.py is a nbconvert of readme_setup.jpynb. If necessary, it
 
 
 
-# 2.2. Production setup on Ubuntu >= 16.04 & Apache
+# 2.2. Production setup on Ubuntu >= 16.04 & Apache in Google Cloud (steps might differ on other hosting platforms)
 
-Follow the instructions in this youTube link: link is coming soon
+After creating your vm wait some minutes. Then open the vm shell and follow the instructions in this youTube link: link is coming soon
 
 ##01_clone_repo
 #################################################################################
@@ -117,7 +117,11 @@ Also, feel free to add/remove lines from ubuntu_apache.sh if needed.
 ##02_install_project
 #################################################################################
 
-Run lines below in Ubuntu shell: change 777 to reasonable value after install
+Run lines below in Ubuntu shell:
+1. change 777 to reasonable value after install
+2. You will be prompted to press Y/N several times. So, stay at your computer and confirm everything with yes.
+3. You will be prompted for the remote desktop password. Enter a Password and convirm.
+4. You will be asked to choose a desktop. I always go with the default (gdm3). Just press ENTER to confirm.
 
     cp /home/my_stuff.py /home/yourProjectName/web_project/web_project/my_stuff.py
     cp /home/yourProjectName/resources/ubuntu_apache.sh /home/ubuntu_apache.sh
