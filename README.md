@@ -108,7 +108,7 @@ sudo apt update && sudo apt install git && cd /home{ENTER}{DELAY 30000}{URL}{ENT
 
 
 ###Before installing you have to change the repo name inside line 3 of resources >> ubuntu_apache.sh
-Change the to-value to what ever you like, make sure, the name lines up with your 02_install_project names below
+Change the to-value to what ever you like. Make sure, the name lines up with your 02_install_project names below.
 Also, feel free to add/remove lines from ubuntu_apache.sh if needed.
 
     mv 100_django_template yourProjectName
@@ -131,6 +131,11 @@ cp /home/my_stuff.py {USERNAME}{ENTER}{DELAY 1000}cp {URL}/resources/{NOTES} /ho
 
     TITLE: 02_install_project
     USERNAME: /home/yourProjectName/web_project/web_project/my_stuff.py
-    PASSWORD: empty
+    PASSWORD: i keep my ssh key here
     URL: /home/yourProjectName
     NOTES: ubuntu_apache.sh
+
+
+# 3. Template change
+In admin there is a starting Theme/Article, that has a web_mode of localhost. This means, its only shown, if HOSTNAME is localhost:8000.
+You can change web_mode to your hostname/IP to show Theme/Article in production.
