@@ -1,0 +1,869 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"py_",
+				"py_sort_by_ext_refkey\tpy_sort_by_ext_refkey"
+			],
+			[
+				"re_",
+				"re_search_www_term\tre_search_www_term"
+			],
+			[
+				"ubuntu",
+				"ubuntu_apache.sh"
+			],
+			[
+				"read",
+				"readme_setup.py"
+			],
+			[
+				"clon",
+				"cloneProjectPath"
+			],
+			[
+				"yourP",
+				"yourProjectName"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"__",
+				"__name__ == '__main__':〔variable〕"
+			],
+			[
+				"multi",
+				"multiprocessing"
+			],
+			[
+				"auto_now",
+				"auto_now_add"
+			],
+			[
+				"mod",
+				"models〔module〕"
+			],
+			[
+				"py_io",
+				"py_io_pickle_save\tpy_io_pickle_save"
+			],
+			[
+				"fli",
+				"flip_board"
+			],
+			[
+				"pawn",
+				"pawnStart"
+			],
+			[
+				"re",
+				"re_datetime_snippet\tre_datetime_str"
+			],
+			[
+				"bo",
+				"boardState\tstatement"
+			],
+			[
+				"combinat",
+				"combinations_with_replacement\tfunction"
+			],
+			[
+				"combinatio",
+				"combinations_with_replacement〔class〕"
+			],
+			[
+				"travers",
+				"traversal\tstatement"
+			],
+			[
+				"tra",
+				"traversal"
+			],
+			[
+				"traver",
+				"traversal_type"
+			],
+			[
+				"sucess",
+				"success_url\tstatement"
+			],
+			[
+				"SignUpC",
+				"SignUpCreateView"
+			],
+			[
+				"SEC",
+				"SECRET_KEY"
+			],
+			[
+				"para",
+				"para_dict"
+			],
+			[
+				"grid-au",
+				"grid-auto-rows\tproperty"
+			],
+			[
+				"in_con",
+				"in_container_loc"
+			],
+			[
+				"is",
+				"is_authenticated"
+			],
+			[
+				"url",
+				"url_is_exempt"
+			],
+			[
+				"Url",
+				"url_is_exempt"
+			],
+			[
+				"L",
+				"LOGIN_EXEMPT_URLS"
+			],
+			[
+				"PRODU",
+				"PRODUCTION_IP"
+			],
+			[
+				"dtst",
+				"dtstr_day"
+			],
+			[
+				"in_obj",
+				"in_obj_db_loc"
+			],
+			[
+				"do_trans",
+				"do_transport_remote_file"
+			],
+			[
+				"pro",
+				"PRODUCTION_IP"
+			],
+			[
+				"PRO",
+				"PRODUCTION_IP"
+			],
+			[
+				"get_o",
+				"get_object_or_404"
+			],
+			[
+				"User",
+				"UserUpdateForm"
+			],
+			[
+				"Us",
+				"UserCreationForm"
+			],
+			[
+				"my_r",
+				"my_range_h"
+			],
+			[
+				"my",
+				"my_range_l"
+			],
+			[
+				"in_src",
+				"in_srcyear"
+			],
+			[
+				"in_attachment",
+				"in_attachment_name"
+			],
+			[
+				"exter",
+				"extracted_bos"
+			],
+			[
+				"extra",
+				"extracted_text"
+			],
+			[
+				"mail_",
+				"mail_number"
+			],
+			[
+				"do_get_",
+				"do_get_mails_contents"
+			],
+			[
+				"f",
+				"f"
+			],
+			[
+				"pop",
+				"pop_word"
+			],
+			[
+				"uniq",
+				"unique_words"
+			],
+			[
+				"tmp_in",
+				"tmp_in_cum_stats_1"
+			],
+			[
+				"new_",
+				"new_word_stats"
+			],
+			[
+				"nw",
+				"new_word_stats"
+			],
+			[
+				"in_comple",
+				"in_completion_datetime"
+			],
+			[
+				"ob",
+				"object_list"
+			],
+			[
+				"desc",
+				"describe_list"
+			],
+			[
+				"pattern",
+				"file_name_pattern"
+			],
+			[
+				"channel",
+				"channel_data"
+			],
+			[
+				"tmp_",
+				"tmp_in_cls_body"
+			],
+			[
+				"do_wr",
+				"do_write_inst"
+			],
+			[
+				"process",
+				"process_id"
+			],
+			[
+				"in_out",
+				"in_output_style"
+			],
+			[
+				"in_outp",
+				"in_output_style_pattern"
+			],
+			[
+				"cl_pa",
+				"cl_params_loc"
+			],
+			[
+				"in_topics",
+				"in_topics_terms"
+			],
+			[
+				"in_pars",
+				"in_parse_result"
+			],
+			[
+				"cl_p",
+				"cl_params_ext"
+			],
+			[
+				"cl",
+				"cl_params_loc"
+			],
+			[
+				"cl_para",
+				"cl_params_loc"
+			],
+			[
+				"cl_",
+				"cl_params_ext"
+			],
+			[
+				"cl_par",
+				"cl_params_ext"
+			],
+			[
+				"clobj",
+				"clobject_location"
+			],
+			[
+				"page",
+				"page_title"
+			],
+			[
+				"clob",
+				"clobject_location"
+			],
+			[
+				"border_",
+				"border_bottom"
+			],
+			[
+				"get",
+				"get_legal_moves"
+			],
+			[
+				"twin",
+				"twin_values_temp"
+			],
+			[
+				"di",
+				"diagonal_unitsa"
+			],
+			[
+				"diago",
+				"diagonal_unitsd"
+			],
+			[
+				"w_hl",
+				"w_hlayer_drop"
+			],
+			[
+				"train",
+				"train_rec_count"
+			],
+			[
+				"test",
+				"test_rec_count"
+			],
+			[
+				"review",
+				"reviews_test"
+			],
+			[
+				"ab",
+				"absolute_correct"
+			],
+			[
+				"abs",
+				"absolute_false"
+			],
+			[
+				"rew",
+				"reviews_test"
+			],
+			[
+				"w_c",
+				"w_cnt_1"
+			],
+			[
+				"revie",
+				"reviews_test"
+			],
+			[
+				"nr",
+				"nr_ol"
+			],
+			[
+				"outp",
+				"output_error_term"
+			],
+			[
+				"hid",
+				"hidden_error_term"
+			],
+			[
+				"hi",
+				"hidden_layer_in"
+			],
+			[
+				"output",
+				"output_layer_in"
+			],
+			[
+				"learn",
+				"learnrate"
+			],
+			[
+				"ta",
+				"targets_test"
+			],
+			[
+				"b_",
+				"b_gradient"
+			],
+			[
+				"num",
+				"num_iterations"
+			],
+			[
+				"lear",
+				"learning_rate"
+			],
+			[
+				"m",
+				"m"
+			],
+			[
+				"la",
+				"laos_life_exp"
+			],
+			[
+				"b",
+				"bmi_life_model"
+			],
+			[
+				"article",
+				"article_chain"
+			],
+			[
+				"arti",
+				"article_chain"
+			],
+			[
+				"fi",
+				"first_relative_link"
+			],
+			[
+				"mat",
+				"matrix1"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"mat",
+				"Material Theme: Advanced configuration"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Install Package Control"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"emo",
+				"Emoji: Insert Emoji"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"INST",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 232.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/python_venvs/101_django_template",
+		"/C/python_venvs/101_django_template/resources",
+		"/C/python_venvs/101_django_template/web_project"
+	],
+	"file_history":
+	[
+		"/C/python_venvs/22_chess_play/code/chess/static/chess_styles.css",
+		"/C/Users/Lars/.ssh/id_rsa.pub",
+		"/C/Users/Lars/.ssh/id_rsa",
+		"/C/python_venvs/101_django_template/readme_setup.py",
+		"/C/python_venvs/101_django_template/adhogtest.py",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/re_search_www_term.sublime-snippet",
+		"/C/python_venvs/101_django_template/README.md",
+		"/C/python_venvs/101_django_template/web_project/blog/templates/blog/components/i_navbar_bottom.html",
+		"/C/python_venvs/101_django_template/web_project/web_project/my_stuff.py",
+		"/C/python_venvs/readme_setup.py",
+		"/C/python_venvs/100_django_template/readme_setup.py",
+		"/C/python_venvs/103_test_install/resources/ubuntu_apache.sh",
+		"/C/python_venvs/101_django_template/resources/ubuntu_apache.sh",
+		"/C/python_venvs/102_django_template/web_project/blog/templates/blog/components/i_navbar_bottom.html",
+		"/C/python_venvs/102_django_template/web_project/blog/templates/blog/components/i_navbar_top.html",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/100_django_template.sublime-build",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/101_django_template.sublime-build",
+		"/C/python_venvs/test.py",
+		"/C/python_venvs/101_django_template/run.py",
+		"/C/python_venvs/101_django_template/install_para.py",
+		"/C/python_venvs/__init__.py",
+		"/C/python_venvs/100_django_template/test2.py",
+		"/C/python_venvs/101_django_template/test_mult.py",
+		"/C/python_venvs/101_django_template/web_project/web_project/settings.py",
+		"/C/python_venvs/101_django_template/.git/COMMIT_EDITMSG",
+		"/C/python_venvs/101_django_template/test_mltp.py",
+		"/C/python_venvs/101_django_template/web_project/web_project/helper.py",
+		"/C/python_venvs/101_django_template/web_project/blog/views_articles.py",
+		"/C/python_venvs/101_django_template/run_server.py",
+		"/C/python_venvs/101_django_template/web_project/web_project/test.py",
+		"/C/python_venvs/100_django_template/.git/COMMIT_EDITMSG",
+		"/C/python_venvs/100_django_template/web_project/web_project/my_stuff.py",
+		"/C/python_venvs/100_django_template/conf_files/sshd_config",
+		"/C/python_venvs/100_django_template/conf_files/environment",
+		"/C/python_venvs/100_django_template/conf_files/101_.bashrc",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2560_software/environments_pip/09_django_web_project/web_project/web_project/settings.py",
+		"/C/python_venvs/122_chess_play/web_project/web_project/settings.py",
+		"/C/python_venvs/100_django_template/venv/web_project/web_project/settings.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/mkenv.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/watchdog_os_events_monitor_file_system.py",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/01_presentations.sublime-build",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2560_software/Sublime_/snippets/py_subprocess_launch_app_in_venv.sublime-snippet",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2560_software/Sublime_/snippets/py_subprocess_cmds.sublime-snippet",
+		"/C/python_venvs/test/Scripts/activate_this.py",
+		"/C/python_venvs/22_chess/Scripts/activate.bat",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/setpip.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/setdjango.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/setdir.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/test.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/paths.py",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/dj_io_model_basic.sublime-snippet",
+		"/C/python_venvs/01_django_template/django_template/settings.py",
+		"/C/python_venvs/01_django_template/read_me.txt",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/setcmd.py",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/dj_admin_site_register.sublime-snippet",
+		"/C/Users/Lars/OneDrive/Dokumente/70 Web/web_project/signups/models.py",
+		"/C/python_venvs/01_django_template/Profile/tests.py",
+		"/C/Users/Lars/OneDrive/Dokumente/70 Web/www_admin/appadmin/models.py",
+		"/C/python_venvs/01_django_template/Profile/admin.py",
+		"/C/python_venvs/01_django_template/Profile/apps.py",
+		"/C/python_venvs/01_django_template/Profile/models.py",
+		"/C/Users/Lars/OneDrive/Dokumente/70 Web/www_admin/www_admin/settings.py",
+		"/C/python_venvs/01_django_projects/Peoples/apps.py",
+		"/C/python_venvs/01_django_projects/django_template/settings.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/01_projects/01_django_project/models.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/01_projects/01_django_project/admin.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2560_software/environments_pip/requirements.txt",
+		"/C/python_venvs/01_django_projects/Peoples/tests.py",
+		"/C/python_venvs/01_django_projects/Peoples/views.py",
+		"/C/Users/Lars/OneDrive/Dokumente/70 Web/web_project/users/models.py",
+		"/C/Users/Lars/OneDrive/Dokumente/70 Web/web_project/blog/models.py",
+		"/C/Users/Lars/OneDrive/Dokumente/70 Web/web_project/signups/forms.py",
+		"/C/Users/Lars/OneDrive/Dokumente/70 Web/web_project/signups/apps.py",
+		"/C/Users/Lars/OneDrive/Dokumente/70 Web/web_project/signups/admin.py",
+		"/C/Users/Lars/OneDrive/Dokumente/70 Web/web_project/web_project/settings.py",
+		"/C/python_venvs/01_django_project/users/admin.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/01_projects/22_chess/test.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2560_software/Sublime_/Preferences.sublime-settings",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/01_projects/22_chess/mytest.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/01_projects/22_chess/Figure.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/forms.html",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/bokeh_submit_form.py",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/plt_io_bokeh_submit_form.sublime-snippet",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/py_sort_by_ext_refkey.sublime-snippet",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/run_cmds.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/threading_example.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/test6.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/test4.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/test3.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/sort_text_by_wordlen.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/row_normalize_matrix.py",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/subprocess_call_sequence.sublime-snippet",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/np_normalize_-1_1_row.sublime-snippet",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/read_saved_dict.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/pickle_save.py",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/py_io_pickle_load.sublime-snippet",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/py_io_pickle_save.sublime-snippet",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/pickle_load.py",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/py_setattr_mult_values.sublime-snippet",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/multiprocessing_pool_on_pandas_df.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/numpy_concatenate_array.py",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/mult_io_pool_example.sublime-snippet",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/list_sort.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/import numpy as np.py",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/np_mat_concat.sublime-snippet",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/22_chess.sublime-build",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/import numpy as np",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/if_in_list.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/get_battery_status.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/empty_list.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/csv_to_txt.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/altair_simple_chart.py",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/pd_io_json_loads..sublime-snippet",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/py_io_with_open.sublime-snippet",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/rd_normal_int.sublime-snippet",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/pd_plot_df_altair.sublime-snippet",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/testfiles/append_array.py",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/rd_gauss_int_normal.sublime-snippet",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/io_py_with_open.sublime-snippet",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/io_py_with_json_loads.sublime-snippet",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 3/Packages/User/snippets/pd_io_csv_walk.sublime-snippet",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/01_projects/22_chess/Network.py",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/setenv.py",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/01_projects/22_chess/22_chess.sublime-workspace",
+		"/C/Users/Lars/OneDrive/Dokumente/25_Work/2510_Python/01_projects/22_chess/Board.py",
+		"/C/Users/Lars/AppData/Roaming/Sublime Text 2/Packages/User/snippets/io_pd_csv_walk.sublime-snippet"
+	],
+	"find":
+	{
+		"height": 70.4
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"re_search_www_term",
+			"url",
+			"match",
+			"102_chess_game",
+			"to_django_project",
+			"yourProjectName",
+			"102_new_name",
+			"to_django_project",
+			"my_vm_user",
+			"vm_user_name",
+			"marvin",
+			"100_django_template"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 69.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.479465623934,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.681443298969,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 293.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/101_django_template.sublime-build",
+	"project": "101_django_template.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"dj_mo",
+				"snippets\\dj_io_model_basic.sublime-snippet"
+			],
+			[
+				"set",
+				"01_django_template\\django_template\\settings.py"
+			],
+			[
+				"fi",
+				"Figure.py"
+			],
+			[
+				"comp",
+				"scipy_compare_two_functions.py"
+			],
+			[
+				"",
+				"web_project\\settings.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 272.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
